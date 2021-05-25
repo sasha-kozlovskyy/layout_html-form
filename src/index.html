@@ -11,12 +11,13 @@
   </head>
 
   <body>
-    <h1>HTML Form</h1>
+    <!-- <h1>HTML Form</h1> -->
     <script type="text/javascript" src="./main.js"></script>
 
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"
     method="POST"
-    onsubmit="onSubmit()">
+    onsubmit="onSubmit()"
+    >
       <fieldset>
         <legend>Personal information</legend>
         <div class="form-field">
@@ -36,7 +37,7 @@
           autocomplete="off">
         </div>
         <div class="form-field">
-          <label for="Q1">How old are You?:</label>
+          <label for="Q1">How old are You?</label>
           <input type="number"
           name="age"
           id="Q1"
@@ -84,28 +85,23 @@
         <legend>An interesting fact about you!</legend>
 
         <div class="form-field">
-          <label for="Q2">Do you love cats?:</label>
-          <div>
-            <input type="radio"
+          <label for="Q2">Do you love cats?</label>
+          <input type="radio"
             name="cats"
             id="Q2"
             value="y">
           Yes
-          </div>
-          <div>
-            <input type="radio"
+          <input type="radio"
             name="cats"
             value="n">
           No
-          </div>
         </div>
-        <div class="form-field">
+        <div class="form-field res">
           <label for="Q3">What is your favorite color?</label>
-          <select name="color" id="Q3">
-            <option value="#f00">Red</option>
-            <option value="#0f0">Green</option>
-            <option value="#00f">Blue</option>
-          </select>
+          <input type="color"
+          name="color"
+          value="foo"
+          id="Q3">
         </div>
         <div class="form-field">
           <label for="Q4">What time do you go to bed?</label>
@@ -114,7 +110,7 @@
           name="time">
         </div>
         <div class="form-field">
-          <label for="Q5">What are you favorite brand of cars?</label>
+          <label for="Q5">What are your favorite brand of cars?</label>
           <select name="car"
           id="Q5"
           multiple>
@@ -124,9 +120,10 @@
           </select>
         </div>
         <div class="form-field">
-          <label for="Q6">How do you rate our work?:</label>
+          <label for="Q6">How do you rate our work?</label>
           <input type="range"
           id="Q6"
+          value="0"
           name="rate">
         </div>
       </fieldset>
