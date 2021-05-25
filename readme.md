@@ -47,5 +47,3 @@ Create HTML page with form. On form submit send form data to `https://mate-acade
 
 ## Tips
 - You can group different input sections with [fieldset](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset) tag
-
-
